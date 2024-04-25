@@ -30,7 +30,7 @@ def answer():
         message = "Nope. Try something smaller."
         return render_template("answer.html", message=message)
     
-    elif guess > secret_number:
+    elif guess < secret_number:
         message = "Nope. Try something bigger."
         return render_template("answer.html", message=message)
 
